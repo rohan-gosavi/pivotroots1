@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="course-info.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="row no-gutters">
+            <div class="col-12 mt-4 mb-3">
+                <p class="header position-absolute">Guaranteed Higher Scores! Only with easyMath</p>
+                <div class="main-div mt-5 row no-gutters">
+                    <div class="content-holder row no-gutters w-100 p-2 p-md-5">
+                        <div class="col-12 p-0 justify-content-center justify-content-md-start d-flex">
+                            <span class="yearly-courses courseBtn d-inline-block mr-2 mr-md-3 font-weight-bold">Yearly Courses</span>
+                            <span class="monthly-courses courseBtn d-inline-block font-weight-bold">Monthly Courses</span>
+                        </div>
+                        <div class="grades dropdown mt-4 mx-auto mx-md-0">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select Grade
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+                        </div>
+                        <div class="boards ml-0 ml-md-4 text-center text-md-left">
+                            <span class="cbse board font-weight-bold">CBSE</span>
+                            <span class="ntse board font-weight-bold">NTSE</span>
+                            <span class="jeemain board font-weight-bold">JEE MAIN</span>
+                            <span class="jeemainadv board font-weight-bold">JEE MAIN+ADVANCED</span>
+                            <span class="icse board font-weight-bold">ICSE</span>
+                            <span class="ib board font-weight-bold">IB</span>
+                            <span class="igcse board font-weight-bold">IGCSE</span>
+                            <span class="adv board font-weight-bold">ADVANCE LEVEL</span>
+                        </div>
+                        <div id="monthlyCourses" class="courseInfo col-12 mt-4">
+                            <div class="row no-gutters">
+                                <div class="oneMonth duration col-12">
+                                    <div class="row no-gutters px-2 px-md-5">
+                                        <div class="col-12 col-md-4">
+                                            <label class="month"><span id="valid"></span><span id="refund" class="d-block"></span>
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div id="cost" class="col-6 col-md-4">
+                                            <span id="price" class="d-block">&#8377; <span class="discountedPrice"></span>&nbsp;&nbsp;	<span class="rs d-block d-md-inline-block">&#8377;&nbsp;<span class="actualPrice"></span></span></span>
+                                            <p class="discount d-block"><span id="discount"></span>% OFF</p>
+                                        </div>
+                                        <div id="sessions" class="col-6 col-md-4">
+                                            <p class="persession d-block">&#8377; <span id="per_class_price"></span> per session</p>
+                                            <p class="sessions d-block"><span id="total_sessions"></span> Sessions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="twoMonth duration col-12">
+                                    <div class="row no-gutters px-2 px-md-5">
+                                        <div class="col-12 col-md-4">
+                                            <label class="month"><span id="valid"></span><span id="refund" class="d-block"></span>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div id="cost" class="col-6 col-md-4">
+                                            <span id="price" class="d-block">&#8377; <span class="discountedPrice"></span>&nbsp;&nbsp;	<span class="rs d-block d-md-inline-block">&#8377;&nbsp;<span class="actualPrice"></span></span></span>
+                                            <p class="discount d-block"><span id="discount"></span>% OFF</p>
+                                        </div>
+                                        <div id="sessions" class="col-6 col-md-4">
+                                            <p class="persession d-block">&#8377; <span id="per_class_price"></span> per session</p>
+                                            <p class="sessions d-block"><span id="total_sessions"></span> Sessions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="threeMonth duration col-12">
+                                    <div class="row no-gutters px-2 px-md-5">
+                                        <div class="col-12 col-md-4">
+                                            <label class="month"><span id="valid"></span><span id="refund" class="d-block"></span>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div id="cost" class="col-6 col-md-4">
+                                            <span id="price" class="d-block">&#8377; <span class="discountedPrice"></span>&nbsp;&nbsp;	<span class="rs d-block d-md-inline-block">&#8377;&nbsp;<span class="actualPrice"></span></span></span>
+                                            <p class="discount d-block"><span id="discount"></span>% OFF</p>
+                                        </div>
+                                        <div id="sessions" class="col-6 col-md-4">
+                                            <p class="persession d-block">&#8377; <span id="per_class_price"></span> per session</p>
+                                            <p class="sessions d-block"><span id="total_sessions"></span> Sessions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sixMonth duration col-12">
+                                    <div class="row no-gutters px-2 px-md-5">
+                                        <div class="col-12 col-md-4">
+                                            <label class="month"><span id="valid"></span><span id="refund" class="d-block"></span>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div id="cost" class="col-6 col-md-4">
+                                            <span id="price" class="d-block">&#8377; <span class="discountedPrice"></span>&nbsp;&nbsp;	<span class="rs d-block d-md-inline-block">&#8377;&nbsp;<span class="actualPrice"></span></span></span>
+                                            <p class="discount d-block"><span id="discount"></span>% OFF</p>
+                                        </div>
+                                        <div id="sessions" class="col-6 col-md-4">
+                                            <p class="persession d-block">&#8377; <span id="per_class_price"></span> per session</p>
+                                            <p class="sessions d-block"><span id="total_sessions"></span> Sessions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="yearlyCourses" class="courseInfo col-12 mt-4">
+                            <div class="row no-gutters">
+                                <div class="total_sessions info col-12 col-lg-1 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Total Sessions</p>
+                                    <p id="total_sessions" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                                <div class="online_assignments info col-12 col-lg-2 pl-0 pl-lg-4 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Online Assignments</p>
+                                    <p id="online_assignments" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                                <div class="online_pre_assignments info col-12 col-lg-2 pl-0 pl-lg-4 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Online Pre Assignments</p>
+                                    <p id="online_pre_assignments" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                                <div class="online_post_assignments info col-12 col-lg-2 pl-0 pl-lg-4 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Online Post Assignments</p>
+                                    <p id="online_post_assignments" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                                <div class="online_tests info col-12 col-lg-2 pl-0 pl-lg-4 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Online Tests</p>
+                                    <p id="online_tests" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                                <div class="career_counselling_sessions info col-12 col-lg-3 text-md-left">
+                                    <p class="dataHeader d-inline-block d-lg-block">Career Counselling Sessions with Edu Coach</p>
+                                    <p id="career_counselling_sessions" class="dataNumbers d-inline-block d-lg-block"></p>
+                                </div>
+                            </div>
+                            <p class="dataHeader mt-5">Course Topic Includes</p>
+                            <div id="syllabus" class="row no-gutters mt-3"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="monthlyfooter footer row no-gutters">
+                        <div class="col-12 p-2 p-md-5 pt-3 pb-4">
+                            <div class="row no-gutters">
+                                <p class="p1 col-12 col-md-4">Monthly classes let you choose your own course topics</p>
+                                <p class="col-12 col-md-2"></p>
+                                <p class="p2 col-12 col-md-3 mt-4 mt-md-0">Each session lasts 45 minutes</p>
+                                <p class="col-12 col-md-1"></p>
+                                <p class="col-12 col-md-2 no-gutters mt-4 mt-md-0"><span class="bookNow d-block font-weight-bold p-4">Book Now</span></p>
+	                            <p class="col-12 pb-3 text-center text-md-right text-white font-weight-bold mt-4">Refund same day <a id="tnc" href="#" target="_blank" class="text-white"><u>terms & conditions</u></a> apply*</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yearlyfooter footer row no-gutters">
+                        <div class="col-12 p-2 p-md-5 pt-3 pb-4">
+                            <div class="row no-gutters">
+                            	<div class="col-12">
+                            		<div class="row no-gutters">
+		                                <div class="seatsdiv col-12 col-md-6 col-lg-4">
+		                                	<p class="p1">Filling out soon</p>
+		                                	<p class="p2">Vacant Seats <span class="seats"><span id="seats"></span> seats</span></p>
+		                                	<p class="p3 mt-2">Not a classroom, but 1:1 sessions.</p>
+		                                </div>
+		                                <div class="col-12 col-lg-1 d-none d-lg-block"></div>
+		                                <div class="offerdiv col-12 col-md-6 col-lg-5 mt-4 mt-md-0">
+		                                	<p class="p1"><span id="discount"></span>% OFF</p>
+		                                	<p class="p2">Subscription cost: <span id="price">&#8377;<span class="discountedPrice"></span>&nbsp;&nbsp;	<span class="rs">&#8377;&nbsp;</span><span class="actualPrice"></span></span></p>
+		                                	<p class="p3 mt-2">This cost is inclusive of the tablet cost. <br>Per session cost is &#8377;<span id="per_class_price"></span></p>
+		                                </div>
+		                                <div class="col-12 col-lg-2 no-gutters align-self-end mt-4 mt-lg-0"><span class="bookNow d-block font-weight-bold p-4">Book Now</span></div>
+                            		</div>
+                            	</div>
+		                        <div class="col-12 pb-3 mt-5">
+		                        	<div class="row no-gutters">
+		                        		<p class="col-12 col-lg-8 tablet text-white font-weight-bold">You can also avail a 8 inch and 10 inch tablet with your suncription</p>
+		                            	<p class="col-12 col-lg-4 tnc text-right text-white font-weight-bold mt-4 mt-lg-0">Guaranteed <a id="tnc" href="#" target="_blank" class="text-white"><u>terms & conditions</u></a> apply*</p>
+		                        	</div>
+		                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="course-info.js"></script>
+</body>
+
+</html>

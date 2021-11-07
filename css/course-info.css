@@ -1,0 +1,285 @@
+p{
+  margin: 0;
+}
+.main-div{
+  background-color: #0B2F90;
+  border-radius: 20px;
+}
+.header{
+  background-color: #FFB30E;
+  color: #514526;
+  font-weight: bold;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 4px;
+  left: 35px;
+}
+.content-holder{
+  background-color: #6052C9;
+  border-radius: 20px;
+}
+
+.yearly-courses, .monthly-courses{
+  color: #B9B2EF;
+  background-color: #6052C9;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.yearly-courses.selected, .monthly-courses.selected{
+  background-color: #0B2F90;
+  color: #ffffff;
+}
+.boards{
+  display: none;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.boards span{
+  color: #fff;
+  background-color: #6052C9;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.boards span.selected{
+  background-color: #0B2F90;
+}
+.board{
+  display: inline-block;
+}
+
+.dropdown-item{
+  cursor: pointer;
+}
+
+#price .actualPrice{
+  text-decoration: line-through;
+}
+
+#dropdownMenuButton{
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  padding: 15px 0 10px 0;
+  width: 160px;
+  text-align: left;
+}
+.dropdown-toggle::after{
+  margin-left: 47px;
+}
+.dropdown-menu{
+  width: 160px;
+}
+.duration{
+  display: none;
+  padding: 10px 45px;
+  background-color: #7B6FD1;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#valid{
+  font-weight: bold;
+  font-size: 18px;
+}
+#refund{
+  font-size: 12px;
+  font-weight: bold;
+}
+#price{
+  color: #FFB210;
+  font-size: 22px;
+  font-weight: bold;
+}
+.rs{
+  text-decoration: line-through;
+  font-size: 15px;
+}
+.actualPrice{
+  color: #FFB210;
+  font-size: 15px;
+}
+.persession{
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.discount{
+  background-color: #5F51CE;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 56px;
+  border-radius: 5px;
+}
+.p1, .p2{
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.bookNow{
+  background-color: #FFB310;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+}
+.footer{
+  display: none;
+}
+/*yearly css starts*/
+.yearlyfooter .seatsdiv .p1, .yearlyfooter .offerdiv .p1{
+  background-color: #fff;
+  color: #162D88;
+  border-radius: 5px;
+  padding: 5px;
+  width: 113px;
+  font-size: 14px;
+  line-height: 10px;
+  margin-left: 142px;
+}
+.yearlyfooter .offerdiv .p1{
+  width: 73px;
+  margin-left: 126px;
+}
+.yearlyfooter .seatsdiv .p2, .yearlyfooter .offerdiv .p2{
+  color: #fff;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.yearlyfooter .seatsdiv .p2 .seats, .yearlyfooter .seatsdiv #price{
+  color: #FFC801;
+  font-weight: bolder;
+}
+.yearlyfooter .seatsdiv .p3, .yearlyfooter .offerdiv .p3{
+  color: #fff;
+  font-size: 14px;
+}
+.online_tests{
+  padding-right: 8% !important;
+}
+#syllabus{
+  display: block;
+  column-count: 3;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.syllabusTopic{
+  color: #E9CC5B;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.syllabusTopic:first-child{
+  margin: 0 !important;
+}
+.dataHeader{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.dataNumbers{
+  color: #FFC80F;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.tablet{
+  font-size: 18px;
+}
+.tnc{
+  font-size: 12px;
+}
+/*yearly css ends*/
+
+
+
+/*custom radio button css starts*/
+.month {
+  display: block;
+  position: relative;
+  padding-left: 65px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.month input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-40%);
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.month:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.month input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.month input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.month .checkmark:after {
+  top: 4.5px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #6153CB;
+}
+/*custom radio button css ends*/
+
+/*custom media query for mobile*/
+@media only screen and (max-width: 768px) {
+  .online_tests{
+    margin-right: 0% !important;
+  }
+  #syllabus{
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+  .header{
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    width: 250px;
+  }
+}
